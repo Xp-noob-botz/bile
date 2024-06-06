@@ -154,10 +154,12 @@ async def doc(bot, update):
             await bot.send_video(
                 update.message.chat.id,
                 video=file_path,
-                caption=caption,
-                thumb=ph_path,
-                duration=duration,
-                progress=progress_for_pyrogram,
+                    caption=caption,
+                    thumb=ph_path,
+                    width=width,
+                    height=height,
+                    duration=duration,
+                    progress=progress_for_pyrogram,
                 progress_args=("𝗨𝗽𝗹𝗼𝗮𝗱 𝗦𝘁𝗮𝗿𝘁𝗲𝗱｡｡｡｡", ms, time.time()))
         elif type == "audio": 
             await bot.send_audio(
