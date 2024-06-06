@@ -2,22 +2,22 @@ import os, time
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "29917436")
+    API_HASH  = os.environ.get("API_HASH", "4a926822b076a086a167fe8f2701d3e9"")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7116242057:AAFmxen4gUuAZhikZilGp2Rp8h_pCJo69_I") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","rename")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://filerenamebot:QEycfrD2yCwRHaPc@cluster0.zfr3afv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN = int(os.environ.get("ADMIN", ""))
+    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/f5c98c5a77808b2c20a20.jpg")
+    ADMIN = int(os.environ.get("ADMIN", "6141937812"))
 
     # channels logs
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "PandaXTeam") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001869105126"))
     SET_TXT = int(os.environ.get("SET_TXT", "-1002099516093"))
 
     # wes response configuration     
