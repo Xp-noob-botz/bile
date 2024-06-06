@@ -9,6 +9,7 @@ from helper.database import AshutoshGoswami24
 from asyncio import sleep
 from PIL import Image
 import os, time
+import random
 from config import Config
 
 @Client.on_message(filters.private & (filters.document | filters.audio | filters.video))
@@ -131,13 +132,15 @@ async def doc(bot, update):
  
     if (media.thumbs or c_thumb):
         if c_thumb:
-            ph_path = await bot.download_media(c_thumb) 
+            ph_path = await bot.download_media(c_thumb)
+            width, height, ph_path = await fix_thumb(ph_path)
         else:
-            ph_path = await bot.download_media(media.thumbs[0].file_id)
-        Image.open(ph_path).convert("RGB").save(ph_path)
-        img = Image.open(ph_path)
-        img.resize((320, 320))
-        img.save(ph_path, "JPEG")
+            try:
+                ph_path_ = await take_screen_shot(file_path, os.path.dirname(os.path.abspath(file_path)), random.randint(0, duration - 1))
+                width, height, ph_path = await fix_thumb(ph_path_)
+            except Exception as e:
+                ph_path = None
+                print(e)
 
     await ms.edit("𝗣𝗮𝗻𝗱𝗮𝗪𝗲𝗽 𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴")
     type = update.data.split("_")[1]
