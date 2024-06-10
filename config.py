@@ -85,8 +85,7 @@ class Txt(object):
 ┣⪼ ⏰️ Eᴛᴀ: {4}
 ┣⪼ 🥺 joine Plz: @PandaWep
 ╰━━━━━━━━━━━━━━━➣ 
-||❏ If Speed Are not Fast Then Report Send on @botzpwchat
-└◈ Its Our Minimum Speed - 6MbPs 🚀 | 12MbPs 🚀||
+||<a href=https://t.me/botzpwchat>❏ If Speed Are not Fast Then Our Minimum Speed - 6MbPs 🚀 | 12MbPs 🚀 Then Plz Report Send on @botzpwchat</a>||
 </b>"""
 #ʀᴀᴘᴏ ᴄʀᴇᴀᴛᴏʀ https://github.com/AshutoshGoswami24
 #ʀᴀᴘᴏ https://github.com/AshutoshGoswami24/Rename-Bot
