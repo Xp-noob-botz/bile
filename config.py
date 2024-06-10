@@ -28,7 +28,7 @@ class Config(object):
 
 class Txt(object):
     # part of text configuration
-    START_TXT = """Hello {} 👋 
+    START_TXT = """<blockquote>Hello {} 👋 Welcome to Your File Renaming Bot! 🌟 <blockquote>
 
 ➻ This Is An Advanced And Yet Powerful Rename Bot.
 
@@ -39,8 +39,7 @@ class Txt(object):
 ➻ This Bot Also Supports Custom Thumbnail And Custom Caption.
 
 <b>Bot Is Made By :</b> @PandaWep"""
-#ʀᴀᴘᴏ ᴄʀᴇᴀᴛᴏʀ https://github.com/AshutoshGoswami24
-#ʀᴀᴘᴏ https://github.com/AshutoshGoswami24/Rename-Bot
+
     ABOUT_TXT = """
 ╭───────────────⍟
 ├<b>🤖 My Name</b> : {}
@@ -85,7 +84,10 @@ class Txt(object):
 ┣⪼ 🚀 Sᴩᴇᴇᴅ: {3}/s
 ┣⪼ ⏰️ Eᴛᴀ: {4}
 ┣⪼ 🥺 joine Plz: @PandaWep
-╰━━━━━━━━━━━━━━━➣ </b>"""
+╰━━━━━━━━━━━━━━━➣ 
+||❏ If Speed Are not Fast Then Report Send on @botzpwchat
+└◈ Its Our Minimum Speed - 6MbPs 🚀 | 12MbPs 🚀||
+</b>"""
 #ʀᴀᴘᴏ ᴄʀᴇᴀᴛᴏʀ https://github.com/AshutoshGoswami24
 #ʀᴀᴘᴏ https://github.com/AshutoshGoswami24/Rename-Bot
     DONATE_TXT = """
