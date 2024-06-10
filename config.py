@@ -28,7 +28,7 @@ class Config(object):
 
 class Txt(object):
     # part of text configuration
-    START_TXT = """<blockquote>Hello {} 👋 Welcome to Your File Renaming Bot! 🌟 <blockquote>
+    START_TXT = """<blockquote>Hello {} 👋 Welcome to Your File Renaming Bot! 🌟 </blockquote>
 
 ➻ This Is An Advanced And Yet Powerful Rename Bot.
 
