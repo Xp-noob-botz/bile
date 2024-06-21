@@ -14,6 +14,7 @@ class Config(object):
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/f5c98c5a77808b2c20a20.jpg")
     ADMIN = int(os.environ.get("ADMIN", "6141937812"))
+    PORT = int(os.environ.get("PORT", "6141937812"))
 
     # channels logs
     FORCE_SUB   = os.environ.get("FORCE_SUB", "PandaXTeam") 
