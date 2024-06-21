@@ -4,7 +4,7 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "29917436")
     API_HASH  = os.environ.get("API_HASH", "4a926822b076a086a167fe8f2701d3e9")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7116242057:AAFmxen4gUuAZhikZilGp2Rp8h_pCJo69_I") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7116242057:AAFr-Yir7hoeZYs3MdbfmDrW0Zv-XisTozg") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Cluster0")     
@@ -85,8 +85,9 @@ class Txt(object):
 ┣⪼ ⏰️ Eᴛᴀ: {4}
 ┣⪼ 🥺 joine Plz: @PandaWep
 ╰━━━━━━━━━━━━━━━➣ 
-||<a href=https://t.me/botzpwchat>❏ If Speed Are not Fast Then Our Minimum Speed - 6MbPs 🚀 | 12MbPs 🚀 Then Plz Report Send on @botzpwchat</a>||
 </b>"""
+    #||<a href=https://t.me/botzpwchat>❏ If Speed Are not Fast Then Our Minimum Speed - 6MbPs 🚀 | 12MbPs 🚀 Then Plz Report Send on @botzpwchat</a>||
+#
 #ʀᴀᴘᴏ ᴄʀᴇᴀᴛᴏʀ https://github.com/AshutoshGoswami24
 #ʀᴀᴘᴏ https://github.com/AshutoshGoswami24/Rename-Bot
     DONATE_TXT = """
