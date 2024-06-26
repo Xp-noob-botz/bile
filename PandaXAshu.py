@@ -63,11 +63,14 @@ class Bot(Client):
     async def redeploy_app(self):
         try:
             print("Redeploying the app...")
+            await self.send_message(Config.REDEPLOY, f"**{me.mention} Is Redeploying !!`</b>")
             response = requests.post(Config.REDEPLOY_URL)
             if response.status_code == 200:
                 print("App redeployed successfully!")
+                await self.send_message(Config.REDEPLOY, f"**{me.mention} Is Redeploying successfully!!!`</b>")
             else:
                 print(f"Failed to redeploy app. Status code: {response.status_code}")
+                await self.send_message(Config.REDEPLOY, f"**{me.mention} Is Redeploying Failed!!!`</b>")
 
         except Exception as e:
             print(f"Error redeploying app: {str(e)}")
