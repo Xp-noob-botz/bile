@@ -19,6 +19,7 @@ class Config(object):
     # channels logs
     FORCE_SUB   = os.environ.get("FORCE_SUB", "PandaXTeam") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001869105126"))
+    REDEPLOY = int(os.environ.get("REDEPLOY", "-1002147243265"))
     SET_TXT = int(os.environ.get("SET_TXT", "-1002099516093"))
 
     # wes response configuration     
