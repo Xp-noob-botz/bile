@@ -54,7 +54,7 @@ class Bot(Client):
             date = curr.strftime('%d %B, %Y')
             time = curr.strftime('%I:%M:%S %p')
             await self.send_message(Config.REDEPLOY, f"**{me.mention} Is Restarted !!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 Timezone : `Asia/Kolkata`\n\n🉐 Version : `v{__version__} (Layer {layer})`</b>")
-            await self.send_message(Config.SET_TXT, f"**{me.mention} Is Restarted !!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 Timezone : `Asia/Kolkata`\n\n🉐 Version : `v{__version__} (Layer {layer})`</b>")
+            await self.send_message(Config.SET_TXT, f"**{me.mention} Is Restarted !!**")
             
         except Exception as e:
             print(f"Error sending redeploy message: {str(e)}")
