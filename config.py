@@ -13,6 +13,7 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/f5c98c5a77808b2c20a20.jpg")
+    REDEPLOY_URL   = os.environ.get("REDEPLOY_URL", "")
     ADMIN = int(os.environ.get("ADMIN", "6141937812"))
     PORT = int(os.environ.get("PORT", "6141937812"))
 
