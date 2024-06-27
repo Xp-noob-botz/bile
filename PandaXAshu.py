@@ -53,7 +53,7 @@ class Bot(Client):
             curr = datetime.now(timezone("Asia/Kolkata"))
             date = curr.strftime('%d %B, %Y')
             time = curr.strftime('%I:%M:%S %p')
-            await self.send_message(Config.REDEPLOY, f"**{me.mention} Is Restarted !!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 Timezone : `Asia/Kolkata`\n\n🉐 Version : `v{__version__} (Layer {layer})`</b>")
+            await self.send_message(Config.REDEPLOY, f"**{me.mention} Is Deploy Successful!!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 Timezone : `Asia/Kolkata`\n\n🉐 Version : `v{__version__} (Layer {layer})`</b>")
             await self.send_message(Config.SET_TXT, f"**{me.mention} Is Restarted !!**")
             
         except Exception as e:
@@ -62,7 +62,7 @@ class Bot(Client):
     async def schedule_redeploy(self):
         try:
             # Calculate redeployment time as start_time + 90 minutes
-            redeploy_time = self.start_time + timedelta(minutes=90)
+            redeploy_time = self.start_time + timedelta(minutes=60)
             current_time = datetime.now()
 
             # Calculate initial delay if bot is started after its redeploy time
@@ -76,7 +76,7 @@ class Bot(Client):
                 await self.redeploy_app()
 
                 # Wait for 90 minutes before redeploying again
-                await asyncio.sleep(90 * 60)
+                await asyncio.sleep(60 * 60)
 
         except Exception as e:
             print(f"Error in redeployment schedule: {str(e)}")
