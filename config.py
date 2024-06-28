@@ -18,7 +18,7 @@ class Config(object):
     PORT = int(os.environ.get("PORT", "6141937812"))
 
     # channels logs
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "PandaXTeam") 
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "BotzPW") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001869105126"))
     REDEPLOY = int(os.environ.get("REDEPLOY", "-1002147243265"))
     SET_TXT = int(os.environ.get("SET_TXT", "-1002099516093"))
