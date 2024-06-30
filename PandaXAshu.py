@@ -62,7 +62,7 @@ class Bot(Client):
     async def schedule_redeploy(self):
         try:
             # Calculate redeployment time as start_time + 90 minutes
-            redeploy_time = self.start_time + timedelta(minutes=60)
+            redeploy_time = self.start_time + timedelta(minutes=30)
             current_time = datetime.now()
 
             # Calculate initial delay if bot is started after its redeploy time
@@ -76,7 +76,7 @@ class Bot(Client):
                 await self.redeploy_app()
 
                 # Wait for 90 minutes before redeploying again
-                await asyncio.sleep(60 * 60)
+                await asyncio.sleep(30 * 60)
 
         except Exception as e:
             print(f"Error in redeployment schedule: {str(e)}")
