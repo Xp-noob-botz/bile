@@ -17,9 +17,13 @@ async def removethumb(client, message):
 	
 @Client.on_message(filters.private & filters.photo)
 async def addthumbs(client, message):
+    if message.from_user.is_bot:
+        return  # Ignore messages from bots
+
     mkn = await message.reply_text("Please Wait ...")
     await AshutoshGoswami24.set_thumbnail(message.from_user.id, file_id=message.photo.file_id)                
     await mkn.edit("**Thumbnail Saved Successfully ✅️**")
+
 
 
 
