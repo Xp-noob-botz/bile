@@ -17,7 +17,7 @@ async def rename_start(client, message):
     filename = file.file_name
     mention = message.from_user.mention
     if file.file_size > 2000 * 1024 * 1024:
-        await message.reply_text(f"Sorry {mention} This Bot Doesn't Support Uploading Files Bigger Than 2GB. You Can Use [4GB Rename Star Bots](https://t.me/Rename_4GB_Star_Bot)")
+        await message.reply_text(f"Sorry {mention} This Bot Doesn't Support Uploading Files Bigger Than 2GB. You Can Use")
         return
 
     try:
