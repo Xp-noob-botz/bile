@@ -1,6 +1,6 @@
 
 
-
+<!--
 <p align="center">🩵 Thanks for Being Here 🩵</p>
 
 
@@ -86,3 +86,4 @@ status - Check bot status [FOR ADMINS USE ONLY].
 
 ### 😍 BOTS CHANNEL 😍
 - [PandaWep](https://t.me/PandaWep)
+-->
