@@ -4,10 +4,10 @@ class Config(object):
     # pyro client config
     API_ID    = os.environ.get("API_ID", "29917436")
     API_HASH  = os.environ.get("API_HASH", "4a926822b076a086a167fe8f2701d3e9")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7116242057:AAFr-Yir7hoeZYs3MdbfmDrW0Zv-XisTozg") 
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7308293657:AAF9o7yOtBe0lQw66W72YznDMfJi6gBxFk4") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
+    DB_NAME = os.environ.get("DB_NAME","BOT2")     
     DB_URL  = os.environ.get("DB_URL","mongodb+srv://filerenamebot:QEycfrD2yCwRHaPc@cluster0.zfr3afv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
